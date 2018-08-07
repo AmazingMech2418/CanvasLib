@@ -1,4 +1,5 @@
-function Canvas(query) {
+function Canvas(query,functions) {
+  var f = functions | 1;
   if(document.querySelectorAll(query).length==0) {
   document.body.innerHTML += "<canvas>hi</canvas>";
     var iidd = query.split("#");
@@ -12,6 +13,7 @@ function Canvas(query) {
   }
 this.canvas = document.querySelectorAll(query)[0];
   this.ctx = this.canvas.getContext("2d");
+  if(f==1) {
 this.canvasJS = {
   ctx: Canvas(query).ctx,
 rectangle: function(x,y,h,w){ctx.fillRect(x,y,h,w);},
@@ -43,5 +45,5 @@ imaged.src=source;
 ctx.drawImage(imaged,x,y,w,h);
 }
 
-};
+}};
 }
