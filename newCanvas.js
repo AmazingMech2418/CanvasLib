@@ -10,7 +10,7 @@ function Canvas(query) {
   document.querySelectorAll("canvas")[document.querySelectorAll("canvas").length-1].class = cllass[1];
     }
   }
-this.canvas = document.querySelectorAll(query)[0];
+this.c = document.querySelectorAll(query)[0];
   this.ctx = c.getContext("2d");
 this.canvasJS = {
 rectangle: function(x,y,h,w){ctx.fillRect(x,y,h,w);},
