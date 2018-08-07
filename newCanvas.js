@@ -13,7 +13,7 @@ function Canvas(query) {
 this.canvas = document.querySelectorAll(query)[0];
   this.ctx = this.canvas.getContext("2d");
 this.canvasJS = {
-rectangle: function(x,y,h,w)ctx.fillRect(x,y,h,w);},
+rectangle: function(x,y,h,w){ctx.fillRect(x,y,h,w);},
 text: {
 stroke:function(font,text,x,y){ctx.font = font;
 ctx.strokeText(text,x,y);},
