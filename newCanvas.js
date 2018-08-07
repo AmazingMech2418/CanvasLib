@@ -1,6 +1,6 @@
 function Canvas(query) {
   if(document.querySelectorAll(query).length==0) {
-  document.body.innerHTML += "<canvas></canvas>";
+  document.body.innerHTML += "<canvas>hi</canvas>";
     var iidd = query.split("#");
     if (iidd.length > 1) {
   document.querySelectorAll("canvas")[document.querySelectorAll("canvas").length-1].id = iidd[1];
