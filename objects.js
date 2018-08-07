@@ -11,3 +11,6 @@ this.changeY = function(y) {this.y += y;}
 }
 var objects = {};
 function createObject(src,x,y,w,h,name) {objects[name]=(new obj(src,x,y,w,h));}
+function render(objectData,canvas_query) {
+(new Canvas(canvas_query)).canvasJS.image(objectData.src,objectData.x,objectData.y,objectData.w,objectData.h);
+}
