@@ -68,7 +68,7 @@ function render(objectData,canvas_query) {
   if(objectData.src.search("#")==1) {
 (new Canvas(canvas_query)).canvasJS.image(objectData.src,objectData.x,objectData.y,objectData.w,objectData.h);
   } else {
-    var f = objectData.src.replace(/this/g,"(new Canvas("+canvas_query+"))");
+    var f = objectData.src.replace(/this/g,"(new Canvas('"+canvas_query+"'))");
     f = f.replace(/objectData/g,"objd");
   Function(f)();
   }
