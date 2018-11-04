@@ -13,7 +13,7 @@ function WebGLCanvas(query) {
     }
   }
 this.canvas = document.querySelectorAll(query)[0];
-  this.ctx = this.canvas.getContext("webgl");
+  this.ctx = document.querySelectorAll(query)[0].getContext("webgl");
 
 }
 
